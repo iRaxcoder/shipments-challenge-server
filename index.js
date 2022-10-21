@@ -24,4 +24,4 @@ app.get("/ping", async (req, res) => {
 
 app.listen(DB_PORT);
 
-console.log("Server listening on Port: " + PORT);
+console.log("Server listening on Port: " + DB_PORT);
