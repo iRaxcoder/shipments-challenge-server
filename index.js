@@ -3,6 +3,7 @@ import { pool } from "./src/db/index.js";
 import cors from "cors";
 import bodyParser from "body-parser";
 import { router } from "./src/routes/index.js";
+import { DB_PORT } from "./config.js";
 
 const app = express();
 
@@ -21,8 +22,6 @@ app.get("/ping", async (req, res) => {
   res.json(result[0]);
 });
 
-const PORT = process.env.PORT || 3000;
-
-app.listen(PORT);
+app.listen(DB_PORT);
 
 console.log("Server listening on Port: " + PORT);
