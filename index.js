@@ -3,7 +3,7 @@ import { pool } from "./src/db/index.js";
 import cors from "cors";
 import bodyParser from "body-parser";
 import { router } from "./src/routes/index.js";
-import { DB_PORT } from "./config.js";
+import { DB_PORT } from "./src/config.js";
 
 const app = express();
 
